@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .rounded-card {
+        font-size: 1.2rem;
+        padding: 12px !important;
+    }
+
+    textarea.rounded-card {
+        min-height: 140px;
+    }
+
+    section .container {
+        padding: 10px 20px;
+    }
+}
+
+section.rounded-card {
+    padding: 20px;
+}
+
+form input,
+form textarea {
+    border: 2px solid #ccc;
+}
+

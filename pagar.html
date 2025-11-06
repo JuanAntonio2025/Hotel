@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confirmar Pago - Hotel Magic Cristal Park</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilosGlobales.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sombreado">
+        <div class="container">
+            <img src="images/logo.png" alt="logoHotel" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reservar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-4 bg-light m-2 rounded-card sombreado">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="py-3 text-center">Detalles del Huesped</h2>
+                    <form action="index.html" method="POST" class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <input class="rounded-card form-control" type="text" name="nombre" placeholder="Nombre*" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <input class="rounded-card form-control" type="text" name="apellido" placeholder="Apellido*" required>
+                        </div>
+
+                        <div class="col-12 col-md-12">
+                            <input class="rounded-card form-control" type="email" name="email" placeholder="Email*" required>
+                        </div>
+
+                        <div class="col-12 col-md-12">
+                            <input class="rounded-card form-control" type="email" name="emailConfirmar" placeholder="Confirmar Email*" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <input class="rounded-card form-control" type="text" name="telefono" placeholder="Teléfono*" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <input class="rounded-card form-control" type="text" name="telefonoMovil" placeholder="Teléfono móvil*" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <select class="rounded-card form-control" name="pais" required>
+                                <option value="SPA">España</option>
+                                <option value="FRA">Francia</option>
+                                <option value="USA">EE.UU</option>
+                                <option value="GBR">Reino Unido</option>
+                                <option value="AUS">Australia</option>ç
+                                <!--Añadir más países -->
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <input class="rounded-card form-control" type="text" name="DNI" placeholder="DNI/NIF/NIE*" required>
+                        </div>
+
+                        <div class="col-12 col-md-12">
+                            <select class="rounded-card form-control" name="servicioLlegadaSalida" required>
+                                <option value="cd">Almuerzo/Desayuno</option>
+                                <option value="ca">Cena/Almuerzo</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea class="rounded-card form-control" rows="5" name="mensaje" placeholder="Deja aquí tu mensaje" required></textarea>
+                        </div>
+
+                        <h2 class="py-3 text-center">Detalles del pago</h2>
+
+                        <div class="col-12 col-md-12">
+                            <label for="numeroTarjeta" class="fw-bold">Número de Tarjeta:</label>
+                            <input class="rounded-card form-control" type="text" name="numeroTarjeta" placeholder="Número de la tarjeta*" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="caduca" class="fw-bold">Caduca:</label>
+                            <input class="rounded-card form-control" type="date" name="caduca" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="cvv" class="fw-bold">CVV:</label>
+                            <input class="rounded-card form-control" type="number" name="cvv" placeholder="CVV" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="d-flex align-items-center gap-2">
+                                <input type="checkbox" required>
+                                <span>He leído y acepto las <a href="#">condiciones generales</a></span>
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="d-flex align-items-center gap-2">
+                                <input class="align-content-around" type="checkbox" required>
+                                <span>Autorizo la comunicación de mis datos a las empresas que forman parte del Club Magic Amigos:
+                                    Industrias Hoteleras del Mediterráneo S.L, Hoteles Marina D'Or S.L y Magic Terra Natura S.L,
+                                    para recibir comunicaciones comerciales.
+                                    He leído y acepto la <a href="#">política de privacidad</a></span>
+                            </label>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary px-5 py-2 sombreado" type="submit">
+                                Confirmar Pago
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <img src="images/logo.png" alt="logoHotel" class="logo">
+            <p>Av de Ruzafa, 14. 03500 Benidorm (Alicante) • (+34) 965 851 811</p>
+            <p>Términos y condiciones</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

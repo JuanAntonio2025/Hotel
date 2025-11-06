@@ -1,0 +1,15 @@
+.card {
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .btn-detalles {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .detalles-habitacion {
+        display: none;
+    }
+}
