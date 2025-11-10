@@ -164,13 +164,18 @@
                             <input class="rounded-card form-control" type="date" name="fechaFinal" required>
                         </div>
 
-                        <div class="col-12 col-md-12">
-                            <label for="cantidad" class="fw-bold">Cantidad de personas</label>
-                            <input class="rounded-card form-control" type="number" name="cantidad" min="1" max="2" required>
+                        <div class="col-12 col-md-6">
+                            <label for="cantidadAdultos" class="fw-bold">Adultos</label>
+                            <input class="rounded-card form-control" type="number" name="cantidadAdultos" min="1" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="cantidadNiños" class="fw-bold">Niños</label>
+                            <input class="rounded-card form-control" type="number" name="cantidadNiños" min="1" max="2">
                         </div>
 
                         <div class="col-12 text-center">
-                            <button class="btn btn-primary px-5 py-2 sombreado" type="submit">
+                            <button class="btn btn-primary px-5 py-2 sombreado">
                                 Comprobar disponibilidad
                             </button>
                         </div>
