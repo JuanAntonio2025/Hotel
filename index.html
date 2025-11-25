@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sombreado">
         <div class="container">
-            <img src="images/logo.png" alt="logoHotel" class="logo">
+            <img src="images/logo.png" alt="Logo del Hotel Magic Crystal Park" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,8 @@
         </div>
     </nav>
 
-    <header class="section-padding text-center text-white" style="background: url('images/fachada.webp') center/cover no-repeat;">
+    <header class="section-padding text-center text-white">
+        <img src="images/fachada.webp" alt="Fachada del Hotel Magic Cristal Park" class="visually-hidden">
         <div class="container py-5">
             <h1 class="display-4">Hotel Magic Cristal Park</h1>
             <p class="lead">Tu escapada en Benidorm empieza aquí</p>
@@ -39,23 +40,23 @@
                 <div class="col-12 col-md-8">
                     <form action="habitaciones.html" method="GET" class="row g-3">
                         <div class="col-12 col-md-6">
-                            <label for="fechaInicio" class="fw-bold">Empieza</label>
-                            <input class="rounded-card form-control" type="date" name="fechaIncio"required>
+                            <label for="fechaInicio1" class="fw-bold">Empieza</label>
+                            <input class="rounded-card form-control" type="date" name="fechaIncio" id="fechaInicio1" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <label for="fechaFinal" class="fw-bold">Acaba</label>
-                            <input class="rounded-card form-control" type="date" name="fechaFinal" required>
+                            <label for="fechaFinal1" class="fw-bold">Acaba</label>
+                            <input class="rounded-card form-control" type="date" name="fechaFinal" id="fechaFinal1" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <label for="cantidadAdultos" class="fw-bold">Adultos</label>
-                            <input class="rounded-card form-control" type="number" name="cantidadAdultos" min="1" required>
+                            <label for="cantidadAdultos1" class="fw-bold">Adultos</label>
+                            <input class="rounded-card form-control" type="number" name="cantidadAdultos" id="cantidadAdultos1" min="1" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <label for="cantidadNiños" class="fw-bold">Niños</label>
-                            <input class="rounded-card form-control" type="number" name="cantidadNiños" min="1" max="2">
+                            <label for="cantidadNiños1" class="fw-bold">Niños</label>
+                            <input class="rounded-card form-control" type="number" name="cantidadNiños" id="cantidadNiños1" min="1" max="2">
                         </div>
 
                         <div class="col-12 text-center">
@@ -108,6 +109,7 @@
             <h2 class="p-2 mb-4 text-center bg-light m-2 rounded-card sombreado">¿Dónde nos situamos?</h2>
             <div class="ratio ratio-16x9">
                 <iframe
+                        title="Mapa de ubicación del Hotel Magic Cristal Park"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.2581191563595!2d-0.13682598423620422!3d38.53718487962445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62044d6a7b43a3%3A0x423b99a2f2a92e89!2sAv.%20de%20Ruzafa%2C%2014%2C%2003501%20Benidorm%2C%20Alicante!5e0!3m2!1ses!2ses!4v1730895600000!5m2!1ses!2ses"
                         width="600"
                         height="450"
@@ -127,22 +129,22 @@
             <div class="row justify-content-center g-3">
                 <div class="col-auto">
                     <a href="#" class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle shadow me-3 p-2" style="width:60px; height:60px;">
-                        <img src="images/facebook.png" alt="Facebook" class="img-fluid">
+                        <img src="images/facebook.png" alt="Ir a Facebook del hotel" class="img-fluid">
                     </a>
                 </div>
                 <div class="col-auto">
                     <a href="#" class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle shadow me-3 p-2" style="width:60px; height:60px;">
-                        <img src="images/twitter.png" alt="X" class="img-fluid">
+                        <img src="images/twitter.png" alt="Ir a X del hotel" class="img-fluid">
                     </a>
                 </div>
                 <div class="col-auto">
                     <a href="#" class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle shadow me-3 p-2" style="width:60px; height:60px;">
-                        <img src="images/youtube.png" alt="YouTube" class="img-fluid">
+                        <img src="images/youtube.png" alt="Ir a YouTube del hotel" class="img-fluid">
                     </a>
                 </div>
                 <div class="col-auto">
                     <a href="#" class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle shadow me-3 p-2" style="width:60px; height:60px;">
-                        <img src="images/instagram.png" alt="Instagram" class="img-fluid">
+                        <img src="images/instagram.png" alt="Ir a Instagram del hotel" class="img-fluid">
                     </a>
                 </div>
             </div>
@@ -156,22 +158,22 @@
                     <form action="habitaciones.html" method="GET" class="row g-3">
                         <div class="col-12 col-md-6">
                             <label for="fechaInicio" class="fw-bold">Empieza</label>
-                            <input class="rounded-card form-control" type="date" name="fechaIncio"required>
+                            <input class="rounded-card form-control" type="date" name="fechaIncio" id="fechaInicio" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="fechaFinal" class="fw-bold">Acaba</label>
-                            <input class="rounded-card form-control" type="date" name="fechaFinal" required>
+                            <input class="rounded-card form-control" type="date" name="fechaFinal" id="fechaFinal" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="cantidadAdultos" class="fw-bold">Adultos</label>
-                            <input class="rounded-card form-control" type="number" name="cantidadAdultos" min="1" required>
+                            <input class="rounded-card form-control" type="number" name="cantidadAdultos" id="cantidadAdultos" min="1" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="cantidadNiños" class="fw-bold">Niños</label>
-                            <input class="rounded-card form-control" type="number" name="cantidadNiños" min="1" max="2">
+                            <input class="rounded-card form-control" type="number" name="cantidadNiños" id="cantidadNiños" min="1" max="2">
                         </div>
 
                         <div class="col-12 text-center">
@@ -187,7 +189,7 @@
 
     <footer class="bg-primary text-white py-5">
         <div class="container text-center">
-            <img src="images/logo.png" alt="logoHotel" class="logo">
+            <img src="images/logo.png" alt="Logo del Hotel Magic Cristal Park" class="logo">
             <p>Av de Ruzafa, 14. 03500 Benidorm (Alicante) • (+34) 965 851 811</p>
             <p>Términos y condiciones</p>
         </div>
