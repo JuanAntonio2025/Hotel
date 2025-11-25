@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sombreado">
         <div class="container">
-            <img src="images/logo.png" alt="logoHotel" class="logo">
+            <img src="images/logo.png" alt="Logo del Hotel Magic Crystal Park" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -30,34 +30,42 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
+                    <h1>Pago</h1>
                     <h2 class="py-3 text-center">Detalles del Huesped</h2>
                     <form action="index.html" method="GET" class="row g-3">
                         <div class="col-12 col-md-6">
-                            <input class="rounded-card form-control" type="text" name="nombre" placeholder="Nombre*" required>
+                            <label for="nombre" class="fw-bold">Nombre</label>
+                            <input class="rounded-card form-control" type="text" name="nombre" placeholder="Nombre*" id="nombre" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <input class="rounded-card form-control" type="text" name="apellido" placeholder="Apellido*" required>
+                            <label for="apellido" class="fw-bold">Apellidos</label>
+                            <input class="rounded-card form-control" type="text" name="apellido" placeholder="Apellido*" id="apellido" required>
                         </div>
 
                         <div class="col-12 col-md-12">
-                            <input class="rounded-card form-control" type="email" name="email" placeholder="Email*" required>
+                            <label for="email" class="fw-bold">Email</label>
+                            <input class="rounded-card form-control" type="email" name="email" placeholder="Email*" id="email" required>
                         </div>
 
                         <div class="col-12 col-md-12">
-                            <input class="rounded-card form-control" type="email" name="emailConfirmar" placeholder="Confirmar Email*" required>
+                            <label for="confirmEmail" class="fw-bold">Confirmar Email</label>
+                            <input class="rounded-card form-control" type="email" name="emailConfirmar" placeholder="Confirmar Email*" id="confirmEmail" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <input class="rounded-card form-control" type="text" name="telefono" placeholder="Teléfono*" required>
+                            <label for="telefono" class="fw-bold">Teléfono</label>
+                            <input class="rounded-card form-control" type="text" name="telefono" placeholder="Teléfono*" id="telefono" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <input class="rounded-card form-control" type="text" name="telefonoMovil" placeholder="Teléfono móvil*" required>
+                            <label for="movil" class="fw-bold">Teléfono Móvil</label>
+                            <input class="rounded-card form-control" type="text" name="telefonoMovil" placeholder="Teléfono móvil*" id="movil" required>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <select class="rounded-card form-control" name="pais" required>
+                            <label for="paises" class="fw-bold">País</label>
+                            <select class="rounded-card form-control" name="pais" id="paises" required>
                                 <option value="SPA">España</option>
                                 <option value="FRA">Francia</option>
                                 <option value="USA">EE.UU</option>
@@ -68,41 +76,44 @@
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <input class="rounded-card form-control" type="text" name="DNI" placeholder="DNI/NIF/NIE*" required>
+                            <label for="dni" class="fw-bold">DNI</label>
+                            <input class="rounded-card form-control" type="text" name="DNI" placeholder="DNI/NIF/NIE*" id="dni" required>
                         </div>
 
                         <div class="col-12 col-md-12">
-                            <select class="rounded-card form-control" name="servicioLlegadaSalida" required>
+                            <label for="pension" class="fw-bold">Pensión</label>
+                            <select class="rounded-card form-control" name="servicioLlegadaSalida" id="pension" required>
                                 <option value="cd">Almuerzo/Desayuno</option>
                                 <option value="ca">Cena/Almuerzo</option>
                             </select>
                         </div>
 
                         <div class="col-12">
-                            <textarea class="rounded-card form-control" rows="5" name="mensaje" placeholder="Deja aquí tu mensaje" required></textarea>
+                            <label for="mensaje" class="fw-bold">Tu mensaje</label>
+                            <textarea class="rounded-card form-control" rows="5" name="mensaje" placeholder="Deja aquí tu mensaje" id="mensaje" required></textarea>
                         </div>
 
                         <h2 class="py-3 text-center">Detalles del pago</h2>
 
                         <div class="col-12 col-md-12">
                             <label for="numeroTarjeta" class="fw-bold">Número de Tarjeta:</label>
-                            <input class="rounded-card form-control" type="text" name="numeroTarjeta" placeholder="Número de la tarjeta*" required>
+                            <input class="rounded-card form-control" type="text" name="numeroTarjeta" placeholder="Número de la tarjeta*" id="numeroTarjeta" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="caduca" class="fw-bold">Caduca:</label>
-                            <input class="rounded-card form-control" type="date" name="caduca" required>
+                            <input class="rounded-card form-control" type="date" name="caduca" id="caduca" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="cvv" class="fw-bold">CVV:</label>
-                            <input class="rounded-card form-control" type="number" name="cvv" placeholder="CVV" required>
+                            <input class="rounded-card form-control" type="number" name="cvv" placeholder="CVV" id="cvv" required>
                         </div>
 
                         <div class="col-12">
-                            <label class="d-flex align-items-center gap-2">
-                                <input type="checkbox" required>
-                                <span>He leído y acepto las <a href="#">condiciones generales</a></span>
+                            <input id="politica" type="checkbox" required>
+                            <label for="politica" class="d-flex align-items-center gap-2">
+                                He leído y acepto las <a href="#">condiciones generales</a>
                             </label>
                         </div>
 
@@ -129,7 +140,7 @@
 
     <footer class="bg-primary text-white py-5">
         <div class="container text-center">
-            <img src="images/logo.png" alt="logoHotel" class="logo">
+            <img src="images/logo.png" alt="Logo del Hotel Magic Crystal Park" class="logo">
             <p>Av de Ruzafa, 14. 03500 Benidorm (Alicante) • (+34) 965 851 811</p>
             <p>Términos y condiciones</p>
         </div>
